@@ -184,6 +184,7 @@
                         <outlet property="label" destination="xu7-zY-jeN" id="hpP-I0-aQ2"/>
                         <outlet property="passwordInput" destination="ygJ-c5-Oaj" id="Il0-ch-7eG"/>
                         <outlet property="usernameInput" destination="knQ-mo-Hw1" id="a5H-aJ-iWQ"/>
+                        <outlet property="xxx" destination="7cj-KZ-zfR" id="HQr-Km-yfT"/>
                         <segue destination="fya-l0-jm1" kind="show" identifier="loginSuccessSegue" id="Cns-aW-Nte"/>
                     </connections>
                 </viewController>
