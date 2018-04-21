@@ -7,13 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A65C838C9987379C6B6160B /* Pods_ureedUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB4E59191E3DE8FA1A85E65 /* Pods_ureedUITests.framework */; };
+		320100852086254A00F85EE6 /* CarCreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320100842086254A00F85EE6 /* CarCreateView.swift */; };
+		3201008920862FB700F85EE6 /* ApiBaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3201008820862FB700F85EE6 /* ApiBaseProtocol.swift */; };
 		320A176420789B64005F97D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320A176320789B64005F97D5 /* AppDelegate.swift */; };
-		320A176620789B64005F97D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320A176520789B64005F97D5 /* ViewController.swift */; };
+		320A176620789B64005F97D5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320A176520789B64005F97D5 /* LoginViewController.swift */; };
 		320A176920789B64005F97D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 320A176720789B64005F97D5 /* Main.storyboard */; };
 		320A176B20789B64005F97D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 320A176A20789B64005F97D5 /* Assets.xcassets */; };
-		320A176E20789B64005F97D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 320A176C20789B64005F97D5 /* LaunchScreen.storyboard */; };
 		320A177920789B64005F97D5 /* ureedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320A177820789B64005F97D5 /* ureedTests.swift */; };
 		320A178420789B64005F97D5 /* ureedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320A178320789B64005F97D5 /* ureedUITests.swift */; };
+		320A17942078B935005F97D5 /* CarListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320A17932078B935005F97D5 /* CarListView.swift */; };
+		320A17962078CCF6005F97D5 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320A17952078CCF6005F97D5 /* TableViewCell.swift */; };
+		32134320207FD770009B74C9 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3213431F207FD770009B74C9 /* Authentication.storyboard */; };
+		321C69262080C8CE00F4AE48 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321C69252080C8CE00F4AE48 /* Api.swift */; };
+		323F2E2E4E93E174AD5A67E7 /* Pods_ureed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54888BFA2DAB1BD60855193B /* Pods_ureed.framework */; };
+		325805B3208A6DBB0012FFBF /* Layout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 325805B2208A6DBB0012FFBF /* Layout.storyboard */; };
+		325805B5208A75080012FFBF /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325805B4208A75080012FFBF /* SideMenuView.swift */; };
+		325805B7208A8B520012FFBF /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325805B6208A8B520012FFBF /* ImageHelper.swift */; };
+		328A26D72080A7730021F3CA /* ApiSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A26D62080A7730021F3CA /* ApiSetting.swift */; };
+		32A0CF1320889DCB00773165 /* ApiBaceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A0CF1220889DCB00773165 /* ApiBaceService.swift */; };
+		32A0CF15208A3E0400773165 /* Jwt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A0CF14208A3E0400773165 /* Jwt.swift */; };
+		32E25F952083E09500E2269C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E25F962083E09500E2269C /* Alamofire.framework */; };
+		32E25F9820850DAB00E2269C /* service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E25F9720850DAB00E2269C /* service.swift */; };
+		32E25F9A20850F2B00E2269C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E25F9920850F2B00E2269C /* User.swift */; };
+		32E25F9D2085285600E2269C /* CarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E25F9C2085285600E2269C /* CarService.swift */; };
+		32E25F9F2085297D00E2269C /* Car.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32E25F9E2085297D00E2269C /* Car.storyboard */; };
+		32FBBD37208BC659000C0971 /* FontAwesome_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32FBBD38208BC659000C0971 /* FontAwesome_swift.framework */; };
+		3F9E9774A3BC62EA5F447337 /* Pods_ureedTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA34B2AC294061F50EFDFF7 /* Pods_ureedTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +54,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13CD876D6282AFF875ADC504 /* Pods-ureed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ureed.release.xcconfig"; path = "Pods/Target Support Files/Pods-ureed/Pods-ureed.release.xcconfig"; sourceTree = "<group>"; };
+		1BA34B2AC294061F50EFDFF7 /* Pods_ureedTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ureedTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		320100842086254A00F85EE6 /* CarCreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCreateView.swift; sourceTree = "<group>"; };
+		3201008820862FB700F85EE6 /* ApiBaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiBaseProtocol.swift; sourceTree = "<group>"; };
 		320A176020789B64005F97D5 /* ureed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ureed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		320A176320789B64005F97D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		320A176520789B64005F97D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		320A176520789B64005F97D5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		320A176820789B64005F97D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		320A176A20789B64005F97D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		320A176D20789B64005F97D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		320A176F20789B64005F97D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		320A177420789B64005F97D5 /* ureedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ureedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		320A177820789B64005F97D5 /* ureedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ureedTests.swift; sourceTree = "<group>"; };
@@ -47,6 +70,32 @@
 		320A177F20789B64005F97D5 /* ureedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ureedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		320A178320789B64005F97D5 /* ureedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ureedUITests.swift; sourceTree = "<group>"; };
 		320A178520789B64005F97D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		320A17932078B935005F97D5 /* CarListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarListView.swift; sourceTree = "<group>"; };
+		320A17952078CCF6005F97D5 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		3213431F207FD770009B74C9 /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
+		321C69252080C8CE00F4AE48 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		325805B2208A6DBB0012FFBF /* Layout.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Layout.storyboard; sourceTree = "<group>"; };
+		325805B4208A75080012FFBF /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		325805B6208A8B520012FFBF /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
+		325805B8208B70380012FFBF /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		328A26D62080A7730021F3CA /* ApiSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiSetting.swift; sourceTree = "<group>"; };
+		329E3EBC207FC6E600B96F64 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32A0CF1220889DCB00773165 /* ApiBaceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiBaceService.swift; sourceTree = "<group>"; };
+		32A0CF14208A3E0400773165 /* Jwt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jwt.swift; sourceTree = "<group>"; };
+		32E25F942083DC9600E2269C /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32E25F962083E09500E2269C /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32E25F9720850DAB00E2269C /* service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = service.swift; sourceTree = "<group>"; };
+		32E25F9920850F2B00E2269C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		32E25F9C2085285600E2269C /* CarService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarService.swift; sourceTree = "<group>"; };
+		32E25F9E2085297D00E2269C /* Car.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Car.storyboard; sourceTree = "<group>"; };
+		32FBBD38208BC659000C0971 /* FontAwesome_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FontAwesome_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54888BFA2DAB1BD60855193B /* Pods_ureed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ureed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AB4E59191E3DE8FA1A85E65 /* Pods_ureedUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ureedUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82644AF625E80F240094EADE /* Pods-ureedTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ureedTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ureedTests/Pods-ureedTests.release.xcconfig"; sourceTree = "<group>"; };
+		8C3FA3AB4D86A2667AEBE9EC /* Pods-ureedTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ureedTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ureedTests/Pods-ureedTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C0377697357E4149F03AF9DD /* Pods-ureed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ureed.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ureed/Pods-ureed.debug.xcconfig"; sourceTree = "<group>"; };
+		F7428215934CFB5E359F6566 /* Pods-ureedUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ureedUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ureedUITests/Pods-ureedUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FBDB09D0496737CF7254CA29 /* Pods-ureedUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ureedUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ureedUITests/Pods-ureedUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +103,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32FBBD37208BC659000C0971 /* FontAwesome_swift.framework in Frameworks */,
+				32E25F952083E09500E2269C /* Alamofire.framework in Frameworks */,
+				323F2E2E4E93E174AD5A67E7 /* Pods_ureed.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F9E9774A3BC62EA5F447337 /* Pods_ureedTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A65C838C9987379C6B6160B /* Pods_ureedUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +135,8 @@
 				320A177720789B64005F97D5 /* ureedTests */,
 				320A178220789B64005F97D5 /* ureedUITests */,
 				320A176120789B64005F97D5 /* Products */,
+				B27F34208B084661C11C60EC /* Pods */,
+				E868B2C7ED31AC5ED46C825D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,11 +153,15 @@
 		320A176220789B64005F97D5 /* ureed */ = {
 			isa = PBXGroup;
 			children = (
+				325805B0208A6D4C0012FFBF /* layout */,
+				32E25F9B208527EC00E2269C /* car */,
+				321C69242080C8B600F4AE48 /* api */,
+				321C69232080C89D00F4AE48 /* helper */,
+				328A26D52080A73B0021F3CA /* setting */,
+				321D21AE207F8CEE002BA79D /* authentication */,
 				320A176320789B64005F97D5 /* AppDelegate.swift */,
-				320A176520789B64005F97D5 /* ViewController.swift */,
 				320A176720789B64005F97D5 /* Main.storyboard */,
 				320A176A20789B64005F97D5 /* Assets.xcassets */,
-				320A176C20789B64005F97D5 /* LaunchScreen.storyboard */,
 				320A176F20789B64005F97D5 /* Info.plist */,
 			);
 			path = ureed;
@@ -125,6 +185,100 @@
 			path = ureedUITests;
 			sourceTree = "<group>";
 		};
+		321C69232080C89D00F4AE48 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				325805B6208A8B520012FFBF /* ImageHelper.swift */,
+			);
+			path = helper;
+			sourceTree = "<group>";
+		};
+		321C69242080C8B600F4AE48 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				321C69252080C8CE00F4AE48 /* Api.swift */,
+				3201008820862FB700F85EE6 /* ApiBaseProtocol.swift */,
+				32A0CF1220889DCB00773165 /* ApiBaceService.swift */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		321D21AE207F8CEE002BA79D /* authentication */ = {
+			isa = PBXGroup;
+			children = (
+				320A176520789B64005F97D5 /* LoginViewController.swift */,
+				3213431F207FD770009B74C9 /* Authentication.storyboard */,
+				32E25F9720850DAB00E2269C /* service.swift */,
+				32E25F9920850F2B00E2269C /* User.swift */,
+				32A0CF14208A3E0400773165 /* Jwt.swift */,
+			);
+			path = authentication;
+			sourceTree = "<group>";
+		};
+		325805B0208A6D4C0012FFBF /* layout */ = {
+			isa = PBXGroup;
+			children = (
+				325805B1208A6D5A0012FFBF /* sideMenu */,
+				325805B2208A6DBB0012FFBF /* Layout.storyboard */,
+			);
+			path = layout;
+			sourceTree = "<group>";
+		};
+		325805B1208A6D5A0012FFBF /* sideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				325805B4208A75080012FFBF /* SideMenuView.swift */,
+			);
+			path = sideMenu;
+			sourceTree = "<group>";
+		};
+		328A26D52080A73B0021F3CA /* setting */ = {
+			isa = PBXGroup;
+			children = (
+				328A26D62080A7730021F3CA /* ApiSetting.swift */,
+			);
+			path = setting;
+			sourceTree = "<group>";
+		};
+		32E25F9B208527EC00E2269C /* car */ = {
+			isa = PBXGroup;
+			children = (
+				320A17952078CCF6005F97D5 /* TableViewCell.swift */,
+				320A17932078B935005F97D5 /* CarListView.swift */,
+				32E25F9C2085285600E2269C /* CarService.swift */,
+				32E25F9E2085297D00E2269C /* Car.storyboard */,
+				320100842086254A00F85EE6 /* CarCreateView.swift */,
+			);
+			path = car;
+			sourceTree = "<group>";
+		};
+		B27F34208B084661C11C60EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0377697357E4149F03AF9DD /* Pods-ureed.debug.xcconfig */,
+				13CD876D6282AFF875ADC504 /* Pods-ureed.release.xcconfig */,
+				8C3FA3AB4D86A2667AEBE9EC /* Pods-ureedTests.debug.xcconfig */,
+				82644AF625E80F240094EADE /* Pods-ureedTests.release.xcconfig */,
+				F7428215934CFB5E359F6566 /* Pods-ureedUITests.debug.xcconfig */,
+				FBDB09D0496737CF7254CA29 /* Pods-ureedUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E868B2C7ED31AC5ED46C825D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32FBBD38208BC659000C0971 /* FontAwesome_swift.framework */,
+				32E25F962083E09500E2269C /* Alamofire.framework */,
+				32E25F942083DC9600E2269C /* Alamofire.framework */,
+				329E3EBC207FC6E600B96F64 /* Alamofire.framework */,
+				54888BFA2DAB1BD60855193B /* Pods_ureed.framework */,
+				1BA34B2AC294061F50EFDFF7 /* Pods_ureedTests.framework */,
+				6AB4E59191E3DE8FA1A85E65 /* Pods_ureedUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +286,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 320A178820789B64005F97D5 /* Build configuration list for PBXNativeTarget "ureed" */;
 			buildPhases = (
+				2A547E9AE431B31F210EBC3A /* [CP] Check Pods Manifest.lock */,
 				320A175C20789B64005F97D5 /* Sources */,
 				320A175D20789B64005F97D5 /* Frameworks */,
 				320A175E20789B64005F97D5 /* Resources */,
+				40F92108E10F6FCA32F95387 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +305,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 320A178B20789B64005F97D5 /* Build configuration list for PBXNativeTarget "ureedTests" */;
 			buildPhases = (
+				734102AA784725B1DAC7DA07 /* [CP] Check Pods Manifest.lock */,
 				320A177020789B64005F97D5 /* Sources */,
 				320A177120789B64005F97D5 /* Frameworks */,
 				320A177220789B64005F97D5 /* Resources */,
@@ -167,6 +324,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 320A178E20789B64005F97D5 /* Build configuration list for PBXNativeTarget "ureedUITests" */;
 			buildPhases = (
+				8F3DB434E76878B962063A79 /* [CP] Check Pods Manifest.lock */,
 				320A177B20789B64005F97D5 /* Sources */,
 				320A177C20789B64005F97D5 /* Frameworks */,
 				320A177D20789B64005F97D5 /* Resources */,
@@ -232,9 +390,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				320A176E20789B64005F97D5 /* LaunchScreen.storyboard in Resources */,
+				325805B3208A6DBB0012FFBF /* Layout.storyboard in Resources */,
 				320A176B20789B64005F97D5 /* Assets.xcassets in Resources */,
 				320A176920789B64005F97D5 /* Main.storyboard in Resources */,
+				32134320207FD770009B74C9 /* Authentication.storyboard in Resources */,
+				32E25F9F2085297D00E2269C /* Car.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,13 +414,105 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2A547E9AE431B31F210EBC3A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ureed-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40F92108E10F6FCA32F95387 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ureed/Pods-ureed-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/FontAwesome.swift/FontAwesome_swift.framework",
+				"${BUILT_PRODUCTS_DIR}/JWTDecode/JWTDecode.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesome_swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JWTDecode.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ureed/Pods-ureed-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		734102AA784725B1DAC7DA07 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ureedTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F3DB434E76878B962063A79 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ureedUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		320A175C20789B64005F97D5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				320A176620789B64005F97D5 /* ViewController.swift in Sources */,
+				321C69262080C8CE00F4AE48 /* Api.swift in Sources */,
+				320A176620789B64005F97D5 /* LoginViewController.swift in Sources */,
+				32E25F9820850DAB00E2269C /* service.swift in Sources */,
+				325805B5208A75080012FFBF /* SideMenuView.swift in Sources */,
+				328A26D72080A7730021F3CA /* ApiSetting.swift in Sources */,
+				32E25F9A20850F2B00E2269C /* User.swift in Sources */,
+				32A0CF1320889DCB00773165 /* ApiBaceService.swift in Sources */,
+				320A17962078CCF6005F97D5 /* TableViewCell.swift in Sources */,
+				32E25F9D2085285600E2269C /* CarService.swift in Sources */,
+				320100852086254A00F85EE6 /* CarCreateView.swift in Sources */,
 				320A176420789B64005F97D5 /* AppDelegate.swift in Sources */,
+				325805B7208A8B520012FFBF /* ImageHelper.swift in Sources */,
+				320A17942078B935005F97D5 /* CarListView.swift in Sources */,
+				32A0CF15208A3E0400773165 /* Jwt.swift in Sources */,
+				3201008920862FB700F85EE6 /* ApiBaseProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,16 +552,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				320A176820789B64005F97D5 /* Base */,
+				325805B8208B70380012FFBF /* ar */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		320A176C20789B64005F97D5 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				320A176D20789B64005F97D5 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -319,6 +564,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -376,6 +622,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -424,10 +671,13 @@
 		};
 		320A178920789B64005F97D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0377697357E4149F03AF9DD /* Pods-ureed.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7Q7PN55452;
 				INFOPLIST_FILE = ureed/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.ureed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -438,10 +688,13 @@
 		};
 		320A178A20789B64005F97D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13CD876D6282AFF875ADC504 /* Pods-ureed.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7Q7PN55452;
 				INFOPLIST_FILE = ureed/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.ureed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -452,6 +705,7 @@
 		};
 		320A178C20789B64005F97D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C3FA3AB4D86A2667AEBE9EC /* Pods-ureedTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -468,6 +722,7 @@
 		};
 		320A178D20789B64005F97D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82644AF625E80F240094EADE /* Pods-ureedTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +739,7 @@
 		};
 		320A178F20789B64005F97D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7428215934CFB5E359F6566 /* Pods-ureedUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -499,6 +755,7 @@
 		};
 		320A179020789B64005F97D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBDB09D0496737CF7254CA29 /* Pods-ureedUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
