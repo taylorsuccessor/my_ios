@@ -9,10 +9,7 @@
 import UIKit
 
 class CarCreateView: UIViewController ,CarProtocol{
-    func getList(_ z: FreelancerResult) {
-        
-    }
-    
+
  
     func create(_ result:Any){
         print(result)

@@ -18,7 +18,7 @@
         <!--Side Menu View-->
         <scene sceneID="ZoX-U3-Gph">
             <objects>
-                <viewController storyboardIdentifier="MainMenu" id="xGQ-lE-bsg" customClass="SideMenuView" customModule="ureed" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Layout.SideMenuView" id="xGQ-lE-bsg" customClass="SideMenuView" customModule="ureed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bZe-o9-z6m">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -47,7 +47,7 @@
                                         </accessibility>
                                         <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXf-Yy-BYt">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="Layout" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXf-Yy-BYt">
                                         <rect key="frame" x="235" y="1" width="37" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>

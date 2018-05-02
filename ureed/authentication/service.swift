@@ -8,21 +8,18 @@
 
 import Foundation
 
-class AuthenticationService{
-    var api=Api()
-    var delegate:AuthenticationProtocol? = nil
-    let moduleUrl="messaging/conversation/"
+class LoginSuccessResult:Decodable{
     
-    func getList(params:[String:Any]=[:]) {
-        
-        self.api.get(url: moduleUrl ,params: params,callback: (self.delegate?.get)!);
-    }
-    
-    
-    
+      var token:String = ""
     
 }
 
-protocol AuthenticationProtocol {
-    func get(_ data: Any)
+class AuthenticationService :ApiBaseService {
+    
+    override var moduleUrl:String {get {return "api-token-auth/"} set{}}
+
+}
+
+protocol LoginProtocol:ApiBaseProtocol{
+    
 }

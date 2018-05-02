@@ -28,9 +28,9 @@ class User{
     "atibiUserType" : [""],
     ]
     
-    static func setUserData(){
-        
-        
+    static func setUserData(_ token:String){
+      
+        User.token=token
         User.userData=Jwt.decodeToken(token: User.token)!
       
     }

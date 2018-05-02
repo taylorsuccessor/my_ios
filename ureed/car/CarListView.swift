@@ -13,12 +13,13 @@ import Alamofire
 
 class CarListView: UIViewController,UITableViewDataSource,UITableViewDelegate,CarProtocol{
     
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var test: UILabel!
     var service = CarService()
     
-    var dataArray=FreelancerResult()
-    var filterData:[String: Any]=["page":1]
+    var dataArray:CarListDecodable?
+    var filterData:[String: Any]=["page":3]
         
         
     @IBOutlet weak var labelOutlet: UILabel!
@@ -32,10 +33,8 @@ class CarListView: UIViewController,UITableViewDataSource,UITableViewDelegate,Ca
         tableView.dataSource=self
         
         
-   
-        
         self.service.delegate = self
-        self.service.getList( params: self.filterData);
+        self.service.request( params: self.filterData,decodable:CarListDecodable.self);
         
     }
 
@@ -53,23 +52,33 @@ extension CarListView{
     
     
     
-    func getList(_ data: Any) {
+    func get(_ data: Any) {
         
-        self.dataArray=(data as? FreelancerResult)!
-        self.tableView.reloadData()
+        self.dataArray = data as? CarListDecodable
+       
+         self.tableView.reloadData()
     }
     
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataArray.hits.hits.count
+        return self.dataArray?.results?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell=tableView.dequeueReusableCell(withIdentifier: "cellIdentifier") as! TableViewCell
-        cell.label.text=self.dataArray.hits.hits[indexPath.row]._source?.user?.last_name ?? ""
+        cell.label.text=self.dataArray?.results?[indexPath.row].title 
         return cell
+    }
+   
+    func tableView(_ tableView: UITableView, willDisplay cell :UITableViewCell,forRowAt indexPath:IndexPath) {
+        if indexPath.row == ((self.dataArray?.results?.count)! - 1) {
+            print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
+            self.filterData["page"] =  (self.filterData["page"] as? Int)! + 1
+            print(self.filterData["page"])
+            self.service.request( params: self.filterData,decodable:CarListDecodable.self);
+        }
     }
     
     

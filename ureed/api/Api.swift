@@ -8,17 +8,24 @@
 
 import Foundation
 import Alamofire
+
 protocol ApiProtocol {
     func get(_ data:Any)
 }
 class Api{
     public var delegate :ApiProtocol?
+    
     func getToken()->String{
         return User.token
     }
     
     func getHeader()->[String: String]{
-        let headersParam=["Authorization":"JWT "+getToken()]
+        
+        var headersParam:[String:String]=[:]
+        let token=getToken()
+        if(token != ""){
+            headersParam = ["Authorization":"JWT "+token]
+        }
         
         return headersParam
     }
@@ -30,13 +37,13 @@ class Api{
         return self.getBaseUrl() + partialUrl
     }
     
-    func get( url:String,  params:[String: Any] ,callback:@escaping (Data)->Void){
-        
-        Alamofire.request(self.getFullUrl(url),  method: .get,parameters: params, encoding: JSONEncoding.default, headers: self.getHeader()).responseJSON { response in
+    func request( url:String,method:HTTPMethod = .get ,  params:[String: Any] ,callback:@escaping (Data,Any)->Void){
+        //URLEncoding.default//JSONEncoding.default
+        Alamofire.request(self.getFullUrl(url),  method: method,parameters: params, encoding:URLEncoding.default , headers: self.getHeader()).responseJSON { response in
             
             switch response.result {
             case .success(let JSON):
-                callback(response.data!)
+                callback(response.data!,JSON )
                 
                 
             case .failure(let error):
@@ -49,21 +56,7 @@ class Api{
     
     
     
-    func post( url:String,  params:[String: Any] ,callback:@escaping (Any)->Void){
-        
-        Alamofire.request(self.getFullUrl(url),  method: .post,parameters: params, encoding: JSONEncoding.default, headers: self.getHeader()).responseJSON { response in
-            
-            switch response.result {
-            case .success(let JSON):
-                callback(JSON)
-                
-                
-            case .failure(let error):
-                print("Request failed with error: \(error)")
-            }
-        }
-        
-    }
+ 
     
     
     

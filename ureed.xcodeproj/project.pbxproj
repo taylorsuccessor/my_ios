@@ -21,6 +21,7 @@
 		32134320207FD770009B74C9 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3213431F207FD770009B74C9 /* Authentication.storyboard */; };
 		321C69262080C8CE00F4AE48 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321C69252080C8CE00F4AE48 /* Api.swift */; };
 		323F2E2E4E93E174AD5A67E7 /* Pods_ureed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54888BFA2DAB1BD60855193B /* Pods_ureed.framework */; };
+		3251B3A5208DA748000B6D52 /* MyCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3251B3A4208DA748000B6D52 /* MyCustomView.xib */; };
 		325805B3208A6DBB0012FFBF /* Layout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 325805B2208A6DBB0012FFBF /* Layout.storyboard */; };
 		325805B5208A75080012FFBF /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325805B4208A75080012FFBF /* SideMenuView.swift */; };
 		325805B7208A8B520012FFBF /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325805B6208A8B520012FFBF /* ImageHelper.swift */; };
@@ -74,6 +75,7 @@
 		320A17952078CCF6005F97D5 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		3213431F207FD770009B74C9 /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		321C69252080C8CE00F4AE48 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		3251B3A4208DA748000B6D52 /* MyCustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCustomView.xib; sourceTree = "<group>"; };
 		325805B2208A6DBB0012FFBF /* Layout.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Layout.storyboard; sourceTree = "<group>"; };
 		325805B4208A75080012FFBF /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
 		325805B6208A8B520012FFBF /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				320A176520789B64005F97D5 /* LoginViewController.swift */,
+				3251B3A4208DA748000B6D52 /* MyCustomView.xib */,
 				3213431F207FD770009B74C9 /* Authentication.storyboard */,
 				32E25F9720850DAB00E2269C /* service.swift */,
 				32E25F9920850F2B00E2269C /* User.swift */,
@@ -395,6 +398,7 @@
 				320A176920789B64005F97D5 /* Main.storyboard in Resources */,
 				32134320207FD770009B74C9 /* Authentication.storyboard in Resources */,
 				32E25F9F2085297D00E2269C /* Car.storyboard in Resources */,
+				3251B3A5208DA748000B6D52 /* MyCustomView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
