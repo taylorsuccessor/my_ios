@@ -39,7 +39,8 @@ class Api{
     
     func request( url:String,method:HTTPMethod = .get ,  params:[String: Any] ,callback:@escaping (Data,Any)->Void){
         //URLEncoding.default//JSONEncoding.default
-        Alamofire.request(self.getFullUrl(url),  method: method,parameters: params, encoding:URLEncoding.default , headers: self.getHeader()).responseJSON { response in
+//        let encoding = (method == .get) ? URLEncoding.default:JSONEncoding.default
+        Alamofire.request(self.getFullUrl(url),  method: method,parameters: params, encoding: ((method == .get) ? URLEncoding.default:JSONEncoding.default), headers: self.getHeader()).responseJSON { response in
             
             switch response.result {
             case .success(let JSON):
@@ -47,6 +48,7 @@ class Api{
                 
                 
             case .failure(let error):
+                
                 print("Request failed with error: \(error)")
             }
         }

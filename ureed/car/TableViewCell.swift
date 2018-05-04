@@ -10,7 +10,20 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
 
+    @IBOutlet weak var cielView: UIView!
     @IBOutlet weak var label: UILabel!
+      var parentViewController:BaseListView!
+    @IBOutlet weak var cellButton: UIButton!
+    var id:Int = 0
+    
+
+   
+    
+    @IBAction func cleckCellButton(_ sender: Any) {
+        // nextTest
+        self.parentViewController.performEditView(self.id)
+        
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

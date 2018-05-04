@@ -60,48 +60,48 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gxc-ak-PC7">
+                                                    <rect key="frame" x="330" y="3" width="30" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="edit"/>
+                                                    <connections>
+                                                        <action selector="cleckCellButton:" destination="rMu-L8-EGy" eventType="touchUpInside" id="zpK-JZ-15B"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="cellButton" destination="Gxc-ak-PC7" id="mok-Va-Cgd"/>
+                                            <outlet property="cielView" destination="NLV-Qf-EKL" id="UDF-YY-g43"/>
                                             <outlet property="label" destination="SdT-zg-yFs" id="Xtw-m7-M6J"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yS3-WW-ILs">
-                                <rect key="frame" x="134" y="554" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qs5-l3-p4C">
-                                <rect key="frame" x="197" y="617" width="115" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="create New"/>
-                                <connections>
-                                    <segue destination="STi-bW-vFz" kind="show" id="MRq-LW-e3Z"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="zCo-k1-Qp5"/>
                     </view>
-                    <navigationItem key="navigationItem" id="tfo-Ld-0m2"/>
+                    <navigationItem key="navigationItem" id="tfo-Ld-0m2">
+                        <barButtonItem key="rightBarButtonItem" title="+" id="GnK-TU-rFB">
+                            <connections>
+                                <action selector="createButtonClick:" destination="yIq-CF-4kK" id="z4I-zM-iMR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="labelOutlet" destination="ZG5-s0-NFq" id="8Ro-C2-vFx"/>
                         <outlet property="tableView" destination="rdu-7v-r1n" id="edB-5n-Eqt"/>
-                        <outlet property="test" destination="yS3-WW-ILs" id="grh-3Y-wXt"/>
+                        <segue destination="STi-bW-vFz" kind="show" identifier="editSegue" id="Qrw-6O-Yt2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rBr-5O-tN7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="480.80000000000001" y="119.1904047976012"/>
         </scene>
-        <!--Car Create View-->
+        <!--Car Edit View-->
         <scene sceneID="FyM-cH-tFl">
             <objects>
-                <viewController storyboardIdentifier="Car.test" id="STi-bW-vFz" customClass="CarCreateView" customModule="ureed" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Car.test" id="STi-bW-vFz" customClass="CarEditView" customModule="ureed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Adp-1V-0AR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -113,17 +113,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Mf-7a-N5E">
-                                <rect key="frame" x="147" y="347" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Pa-oI-G6W">
+                                <rect key="frame" x="198" y="243" width="101" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BfU-pt-g0B">
-                                <rect key="frame" x="147" y="523" width="129" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <color key="backgroundColor" red="0.95757824182510376" green="0.93911677598953247" blue="0.82213205099105835" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Save"/>
                                 <connections>
-                                    <segue destination="yIq-CF-4kK" kind="show" id="fZl-mL-Vg0"/>
+                                    <action selector="saveButtonClick:" destination="STi-bW-vFz" eventType="touchUpInside" id="ctD-Eu-cXQ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -131,7 +127,7 @@
                         <viewLayoutGuide key="safeArea" id="QJp-QN-Qdv"/>
                     </view>
                     <connections>
-                        <outlet property="inputText" destination="c7k-Hb-P6M" id="h07-nK-y22"/>
+                        <outlet property="titleInput" destination="c7k-Hb-P6M" id="Kjc-ua-Ujk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mbG-Hj-LVP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -139,8 +135,4 @@
             <point key="canvasLocation" x="1964" y="-50.824587706146929"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="MRq-LW-e3Z"/>
-        <segue reference="fZl-mL-Vg0"/>
-    </inferredMetricsTieBreakers>
 </document>

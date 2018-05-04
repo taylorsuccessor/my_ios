@@ -11,16 +11,20 @@ import Alamofire
 
 
 
-class CarListView: UIViewController,UITableViewDataSource,UITableViewDelegate,CarProtocol{
+class CarListView: BaseListView,UITableViewDataSource,UITableViewDelegate,CarProtocol{
     
     
+    @IBAction func createButtonClick(_ sender: Any) {
+        self.id = 0
+        self.performSegue(withIdentifier:"editSegue", sender:self)
+    }
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var test: UILabel!
     var service = CarService()
     
     var dataArray:CarListDecodable?
-    var filterData:[String: Any]=["page":3]
-        
+    var filterData:[String: Any]=["p":1,"o":"id","per_page":2]
+    var id: Int = 0
         
     @IBOutlet weak var labelOutlet: UILabel!
     
@@ -44,6 +48,19 @@ class CarListView: UIViewController,UITableViewDataSource,UITableViewDelegate,Ca
     }
 
 
+    override func performEditView(_ id: Int){
+        self.id = id
+        self.performSegue(withIdentifier:"editSegue", sender:self)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "editSegue"){
+            let editView = segue.destination as? BaseEditView
+            editView?.id=self.id
+        }
+    }
+    
 }
 
 
@@ -54,9 +71,14 @@ extension CarListView{
     
     func get(_ data: Any) {
         
-        self.dataArray = data as? CarListDecodable
-       
-         self.tableView.reloadData()
+        let dataList = data as? CarListDecodable
+        
+        if self.dataArray != nil{
+            self.dataArray?.results?.append(contentsOf:(dataList?.results)!)
+        }else{
+            self.dataArray = dataList
+        }
+       self.tableView.reloadData()
     }
     
     
@@ -68,19 +90,20 @@ extension CarListView{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell=tableView.dequeueReusableCell(withIdentifier: "cellIdentifier") as! TableViewCell
-        cell.label.text=self.dataArray?.results?[indexPath.row].title 
+        cell.id=(self.dataArray?.results?[indexPath.row].id)!
+        cell.parentViewController=self
+        cell.label.text=self.dataArray?.results?[indexPath.row].title
+        cell.cellButton.setTitle( String(describing: self.dataArray?.results?[indexPath.row].id), for: .normal )
         return cell
     }
    
     func tableView(_ tableView: UITableView, willDisplay cell :UITableViewCell,forRowAt indexPath:IndexPath) {
         if indexPath.row == ((self.dataArray?.results?.count)! - 1) {
-            print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
-            self.filterData["page"] =  (self.filterData["page"] as? Int)! + 1
-            print(self.filterData["page"])
+            self.filterData["p"] =  (self.filterData["p"] as? Int)! + 1
             self.service.request( params: self.filterData,decodable:CarListDecodable.self);
         }
+        
     }
-    
     
     
 }

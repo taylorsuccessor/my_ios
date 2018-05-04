@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0A65C838C9987379C6B6160B /* Pods_ureedUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB4E59191E3DE8FA1A85E65 /* Pods_ureedUITests.framework */; };
-		320100852086254A00F85EE6 /* CarCreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320100842086254A00F85EE6 /* CarCreateView.swift */; };
+		320100852086254A00F85EE6 /* CarEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320100842086254A00F85EE6 /* CarEditView.swift */; };
 		3201008920862FB700F85EE6 /* ApiBaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3201008820862FB700F85EE6 /* ApiBaseProtocol.swift */; };
 		320A176420789B64005F97D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320A176320789B64005F97D5 /* AppDelegate.swift */; };
 		320A176620789B64005F97D5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320A176520789B64005F97D5 /* LoginViewController.swift */; };
@@ -21,6 +21,8 @@
 		32134320207FD770009B74C9 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3213431F207FD770009B74C9 /* Authentication.storyboard */; };
 		321C69262080C8CE00F4AE48 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321C69252080C8CE00F4AE48 /* Api.swift */; };
 		323F2E2E4E93E174AD5A67E7 /* Pods_ureed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54888BFA2DAB1BD60855193B /* Pods_ureed.framework */; };
+		32464F94209BA78F006AAD59 /* BaseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32464F93209BA78F006AAD59 /* BaseListView.swift */; };
+		32464F96209C402D006AAD59 /* BaseEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32464F95209C402D006AAD59 /* BaseEditView.swift */; };
 		3251B3A5208DA748000B6D52 /* MyCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3251B3A4208DA748000B6D52 /* MyCustomView.xib */; };
 		325805B3208A6DBB0012FFBF /* Layout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 325805B2208A6DBB0012FFBF /* Layout.storyboard */; };
 		325805B5208A75080012FFBF /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325805B4208A75080012FFBF /* SideMenuView.swift */; };
@@ -28,6 +30,7 @@
 		328A26D72080A7730021F3CA /* ApiSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A26D62080A7730021F3CA /* ApiSetting.swift */; };
 		32A0CF1320889DCB00773165 /* ApiBaceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A0CF1220889DCB00773165 /* ApiBaceService.swift */; };
 		32A0CF15208A3E0400773165 /* Jwt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A0CF14208A3E0400773165 /* Jwt.swift */; };
+		32B4C803209A216F00039646 /* documentation.md in Sources */ = {isa = PBXBuildFile; fileRef = 32B4C802209A216E00039646 /* documentation.md */; };
 		32E25F952083E09500E2269C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E25F962083E09500E2269C /* Alamofire.framework */; };
 		32E25F9820850DAB00E2269C /* service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E25F9720850DAB00E2269C /* service.swift */; };
 		32E25F9A20850F2B00E2269C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E25F9920850F2B00E2269C /* User.swift */; };
@@ -57,7 +60,7 @@
 /* Begin PBXFileReference section */
 		13CD876D6282AFF875ADC504 /* Pods-ureed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ureed.release.xcconfig"; path = "Pods/Target Support Files/Pods-ureed/Pods-ureed.release.xcconfig"; sourceTree = "<group>"; };
 		1BA34B2AC294061F50EFDFF7 /* Pods_ureedTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ureedTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		320100842086254A00F85EE6 /* CarCreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCreateView.swift; sourceTree = "<group>"; };
+		320100842086254A00F85EE6 /* CarEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarEditView.swift; sourceTree = "<group>"; };
 		3201008820862FB700F85EE6 /* ApiBaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiBaseProtocol.swift; sourceTree = "<group>"; };
 		320A176020789B64005F97D5 /* ureed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ureed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		320A176320789B64005F97D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +78,8 @@
 		320A17952078CCF6005F97D5 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		3213431F207FD770009B74C9 /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		321C69252080C8CE00F4AE48 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		32464F93209BA78F006AAD59 /* BaseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseListView.swift; sourceTree = "<group>"; };
+		32464F95209C402D006AAD59 /* BaseEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseEditView.swift; sourceTree = "<group>"; };
 		3251B3A4208DA748000B6D52 /* MyCustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCustomView.xib; sourceTree = "<group>"; };
 		325805B2208A6DBB0012FFBF /* Layout.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Layout.storyboard; sourceTree = "<group>"; };
 		325805B4208A75080012FFBF /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
@@ -84,6 +89,7 @@
 		329E3EBC207FC6E600B96F64 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32A0CF1220889DCB00773165 /* ApiBaceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiBaceService.swift; sourceTree = "<group>"; };
 		32A0CF14208A3E0400773165 /* Jwt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jwt.swift; sourceTree = "<group>"; };
+		32B4C802209A216E00039646 /* documentation.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = documentation.md; sourceTree = "<group>"; };
 		32E25F942083DC9600E2269C /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32E25F962083E09500E2269C /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32E25F9720850DAB00E2269C /* service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = service.swift; sourceTree = "<group>"; };
@@ -133,6 +139,7 @@
 		320A175720789B64005F97D5 = {
 			isa = PBXGroup;
 			children = (
+				32B4C802209A216E00039646 /* documentation.md */,
 				320A176220789B64005F97D5 /* ureed */,
 				320A177720789B64005F97D5 /* ureedTests */,
 				320A178220789B64005F97D5 /* ureedUITests */,
@@ -155,6 +162,7 @@
 		320A176220789B64005F97D5 /* ureed */ = {
 			isa = PBXGroup;
 			children = (
+				32464F91209BA719006AAD59 /* base */,
 				325805B0208A6D4C0012FFBF /* layout */,
 				32E25F9B208527EC00E2269C /* car */,
 				321C69242080C8B600F4AE48 /* api */,
@@ -218,6 +226,23 @@
 			path = authentication;
 			sourceTree = "<group>";
 		};
+		32464F91209BA719006AAD59 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				32464F92209BA733006AAD59 /* view */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		32464F92209BA733006AAD59 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				32464F93209BA78F006AAD59 /* BaseListView.swift */,
+				32464F95209C402D006AAD59 /* BaseEditView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		325805B0208A6D4C0012FFBF /* layout */ = {
 			isa = PBXGroup;
 			children = (
@@ -250,7 +275,7 @@
 				320A17932078B935005F97D5 /* CarListView.swift */,
 				32E25F9C2085285600E2269C /* CarService.swift */,
 				32E25F9E2085297D00E2269C /* Car.storyboard */,
-				320100842086254A00F85EE6 /* CarCreateView.swift */,
+				320100842086254A00F85EE6 /* CarEditView.swift */,
 			);
 			path = car;
 			sourceTree = "<group>";
@@ -503,6 +528,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				321C69262080C8CE00F4AE48 /* Api.swift in Sources */,
+				32464F94209BA78F006AAD59 /* BaseListView.swift in Sources */,
 				320A176620789B64005F97D5 /* LoginViewController.swift in Sources */,
 				32E25F9820850DAB00E2269C /* service.swift in Sources */,
 				325805B5208A75080012FFBF /* SideMenuView.swift in Sources */,
@@ -510,11 +536,13 @@
 				32E25F9A20850F2B00E2269C /* User.swift in Sources */,
 				32A0CF1320889DCB00773165 /* ApiBaceService.swift in Sources */,
 				320A17962078CCF6005F97D5 /* TableViewCell.swift in Sources */,
+				32B4C803209A216F00039646 /* documentation.md in Sources */,
 				32E25F9D2085285600E2269C /* CarService.swift in Sources */,
-				320100852086254A00F85EE6 /* CarCreateView.swift in Sources */,
+				320100852086254A00F85EE6 /* CarEditView.swift in Sources */,
 				320A176420789B64005F97D5 /* AppDelegate.swift in Sources */,
 				325805B7208A8B520012FFBF /* ImageHelper.swift in Sources */,
 				320A17942078B935005F97D5 /* CarListView.swift in Sources */,
+				32464F96209C402D006AAD59 /* BaseEditView.swift in Sources */,
 				32A0CF15208A3E0400773165 /* Jwt.swift in Sources */,
 				3201008920862FB700F85EE6 /* ApiBaseProtocol.swift in Sources */,
 			);

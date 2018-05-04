@@ -23,12 +23,9 @@ class LoginViewController: UIViewController{
             "username": usernameInput.text!,
             "password": passwordInput .text!
         ]
-        self.service.request(url:self.service.moduleUrl , params: param,method:.post ,decodable:LoginSuccessResult.self)
+        self.service.request( params: param,method:.post ,decodable:LoginSuccessResult.self)
        
     
-        let storyboard = UIStoryboard(name: "Layout", bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: "Layout.SideMenuView")
-        self.present(controller, animated: true, completion: nil)
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
