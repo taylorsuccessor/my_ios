@@ -8,6 +8,11 @@
 
 //  import Foundation
 
+//class ApiSetting{
+//    static var API_URL="https://api.ureed.com/"
+//}
+
+
 class ApiSetting{
-    static var API_URL="https://api.ureed.com/"
+    static var API_URL="http://api.beta.ureed.net/"
 }
