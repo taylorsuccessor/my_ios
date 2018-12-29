@@ -47,27 +47,14 @@ class LoginViewController: UIViewController{
     
     func tryLogin(){
         print(2)
-        let params = ["id":"3001","title":"tttttt ","is_premium":true,"delivery_time":"2018-06-26 02:04:00","skills": [
-        [
-            "id": 15
-            ],
-        [
-            "id": 16
-            ],
-        [
-            "id": 11
-            ],
-        [
-            "id": 9
-            ]
-            ]] as [String : Any]
+        let params=["budget": 1, "is_premium": false, "description": "Dasd", "delivery_time": "2018-06-28 13:00", "number_of_words": 1111, "language_to_id": 1, "status": "AC", "skills": [["id": 14], ["id": 13]], "id": "3030", "type_of_payment": "FX", "is_public": false, "service_id": 13, "title": "my taylor successor", "language_from_id": 2] as [String : Any]
         let headerss = [
          
             "Authorization": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo4OTksInVzZXJuYW1lIjoibW9oYW1tYWQxNiIsImRpc3BsYXlfbmFtZSI6IlVyZWVkIFByb2plY3RzIERlcGFydG1lbnQiLCJmYXZvcml0ZV9mcmVlbGFuY2VycyI6W10sImF0aWJpVXNlclR5cGUiOlsiTUEiXSwiZW1wbG95ZXJfaWQiOjE1MCwiYmFsYW5jZSI6ODY2NzYuOTksInN0YXR1cyI6IkFDIiwiZW1haWwiOiJtb2hhbW1hZC5oaXRobmF3aUB1cmVlZC5jb20iLCJvcmlnX2lhdCI6MTUzMDAxNDc3OSwidXNlcl90eXBlIjoiZW0iLCJpc19yZW1lbWJlcl9tZSI6ZmFsc2UsInBpY3R1cmUiOiJodHRwczovL21lZGlhLXN0YWdpbmctdXJlZWQuczMuYW1hem9uYXdzLmNvbS9jYWNoZS80Ny9mYi80N2ZiZDI0YzZhZmNkNGNlZWE1YzQ0M2JkNzUyYzgyMC5wbmciLCJleHAiOjE2MTYzMjgzNzl9.xRUtn3kxb-xi_5-5eJKDXTwG8MV_i3wEz1cJMliRexE"
             
         ]
         
-        Alamofire.request("http://api.beta.ureed.net/job/job/3001/",  method: .put,parameters: params, encoding:JSONEncoding.default, headers: headerss).responseString { response in
+        Alamofire.request("http://api.beta.ureed.net/job/job/3030/",  method: .put,parameters: params, encoding:JSONEncoding.default, headers: headerss).responseString { response in
             
            print(response)
         }
